@@ -1,0 +1,87 @@
+div {
+    border: 10px solid darkcyan;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  #red {
+    background-color: red;
+  }
+  
+  #green {
+    background-color: green;
+  }
+  
+  #blue {
+    background-color: blue;
+  }
+  
+  #orange {
+    background-color: orange;
+  }
+  
+  #purple {
+    background-color: purple;
+  }
+  
+  #brown {
+    background-color: brown;
+  }
+  
+  /* START BELOW THIS LINE */
+
+  /* number 1 */
+  #red{
+    transition: width 3s;
+  }
+  #red:hover{
+    width: 300px;
+  }
+
+  /* number 2 */
+  #green:hover {
+    transform: rotate(360deg);
+    transition-duration: 2s;
+    transition-delay: 1s;
+    background-color: yellow;
+  }
+
+  /* number 3 */
+  #blue{
+    animation-name: expand;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+  }
+
+  @keyframes expand {
+    0%{
+        width: 150px;
+    }
+    50%{
+        width: 450px;
+    }
+    100%{
+        width: 150px;
+    }
+  }
+  /* BONUS */
+  /* Number 5 */
+  #purple{
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes circle {
+    0%{
+        border-radius: 0px;
+    }
+    50%{
+        border-radius: 45px;
+    }
+    100%{
+        border-radius: 90px;
+    }
+  }
